@@ -127,7 +127,7 @@ def entries_api():
 
         with get_db_connection() as conn:
             rows = conn.execute(sql, params).fetchall()
-
+#there is a minor change in the code below, I have added a comment to indicate that
         entries = [
             {
                 "id": row["id"],
